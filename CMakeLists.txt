@@ -10,6 +10,7 @@ set (SOURCES ${SOURCES} json-builder.c)
 
 add_library (jsonbuilder ${SOURCES})
 
+target_include_directories(jsonbuilder PUBLIC ../json-parser)
 set_target_properties (jsonbuilder PROPERTIES VERSION 0.1.0
                                               SOVERSION 0.1)
 
