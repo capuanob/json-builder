@@ -4,7 +4,7 @@ project (json-builder)
 
 option(BUILD_FUZZER "Build the json-builder fuzzer" OFF)
 
-set (CMAKE_C_FLAGS "-std=c89 -ansi -pedantic -Wall -I../json-parser ${CMAKE_C_FLAGS}")
+set (CMAKE_C_FLAGS "-std=c89 -ansi -pedantic -Wall ${CMAKE_C_FLAGS}")
 
 set (SOURCES ${SOURCES} json-builder.c)
 
