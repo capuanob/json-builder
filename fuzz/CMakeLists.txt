@@ -11,6 +11,7 @@ endif()
 
 target_include_directories(
     "${PROJECT_NAME}-fuzzer"
+    PUBLIC
     ${PROJECT_SOURCE_DIR}
 )
 
