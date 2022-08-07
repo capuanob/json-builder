@@ -1,9 +1,8 @@
-image: ghcr.io/capuanob/json-builder-fuzz:latest
 project: json-builder
 target: json-builder-fuzz
-tests:
+testsuite:
     - file://fuzz/corpus
 
 cmds:
-  - cmd: /json-builder-fuzzer -close_fd_mask=2
+  - cmd: /json-builder-fuzzer
     libfuzzer: true

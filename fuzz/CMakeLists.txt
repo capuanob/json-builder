@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
 
 add_executable(
     "${PROJECT_NAME}-fuzzer"
-    "${CMAKE_CURRENT_LIST_DIR}/fuzz.c"
+    "${CMAKE_CURRENT_LIST_DIR}/fuzz_json_serialize.c"
 )
 
 if (NOT CMAKE_C_COMPILER_ID STREQUAL "Clang")
